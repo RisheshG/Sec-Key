@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-SECRET_CODE = os.getenv("SECRET_CODE", "1234")
+SECRET_CODE = os.getenv("SECRET_CODE", "123456")
 
 def encrypt_code(code: str) -> str:
     """Encrypt the code using base64 encoding."""
